@@ -76,7 +76,7 @@ function Fizzify(navigator) {
   this.userAgent = function () {
     if (this._userAgent == undefined || this._userAgent == null){
       if (this._navigator != undefined && this._navigator != null && this._navigator != '' && typeof this._navigator === 'object'){
-        return _navigator.userAgent;
+        return this._navigator.userAgent;
       } else {
         return null;
       }
