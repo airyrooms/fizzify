@@ -193,7 +193,7 @@ function Fizzify(navigator) {
       return null;
     
     var regexKeyList = Object.keys(CONSTANTS.REGEX.UA_BROWSER_TYPE);
-    for (var regexKey of regexKeyList){
+    for (var regexKey in regexKeyList){
       if (CONSTANTS.REGEX.UA_BROWSER_TYPE[regexKey].test(ua)){
         return regexKey;
       }
