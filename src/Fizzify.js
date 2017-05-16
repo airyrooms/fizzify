@@ -202,10 +202,6 @@ function Fizzify(navigator) {
     return null;
     
   }
-
-  // run ip() at the moment of the object being constructed
-  // because it will take some time before fetching real ip 
-  this.ip()
   return this;
 }
 
